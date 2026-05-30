@@ -14,7 +14,7 @@
   "url": "https://gamilify.github.io/bears-vs-art.html",
   "description": "Bears vs. Art is the premium version of the slash em’ up puzzle game you love! Exclusive to this version of Bears vs. Art - enjoy uninterrupted, thought-provoking puzzles.
 Each painting is protected by sneaky security measures including lasers, spikes and mind-bending portals. Not to mention snooty guests, nosy security guards and art-snatching thieves!",
-  "image": "https://gamilify.github.io/images/317.webp",
+  "image": "https://gamilify.github.io/images/546.webp",
   "datePublished": "2026-05-30",
   "playMode": "Singleplayer",
   "gamePlatform": "HTML5",
@@ -78,7 +78,7 @@ Each painting is protected by sneaky security measures including lasers, spikes 
 <meta property="og:title" content="Bears vs. Art - Complete Game Guide, Tips & Free Play | Fresh Arcade">
 <meta property="og:description" content="Bears vs. Art is the premium version of the slash em’ up puzzle game you love! Exclusive to this version of Bears vs. Art - enjoy uninterrupted, thought-provoking puzzles.
 Each painting is protected by sneaky security measures including lasers, spikes and mind-bending portals. Not to mention snooty guests, nosy security guards and art-snatching thieves!">
-<meta property="og:image" content="https://gamilify.github.io/images/317.webp">
+<meta property="og:image" content="https://gamilify.github.io/images/546.webp">
 <meta property="og:url" content="https://gamilify.github.io/bears-vs-art.html">
 <meta property="og:site_name" content="Fresh Arcade">
   <!-- Twitter -->
@@ -86,12 +86,12 @@ Each painting is protected by sneaky security measures including lasers, spikes 
 <meta name="twitter:title" content="Bears vs. Art - Complete Game Guide, Tips & Free Play | Fresh Arcade">
 <meta name="twitter:description" content="Bears vs. Art is the premium version of the slash em’ up puzzle game you love! Exclusive to this version of Bears vs. Art - enjoy uninterrupted, thought-provoking puzzles.
 Each painting is protected by sneaky security measures including lasers, spikes and mind-bending portals. Not to mention snooty guests, nosy security guards and art-snatching thieves!">
-<meta name="twitter:image" content="https://gamilify.github.io/images/317.webp">
+<meta name="twitter:image" content="https://gamilify.github.io/images/546.webp">
   <!-- Preconnect -->
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://gamilify.github.io" crossorigin>
   <link rel="canonical" href="https://gamilify.github.io/bears-vs-art.html">
-  <link rel="preload" as="image" href="https://gamilify.github.io/images/317.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="https://gamilify.github.io/images/546.webp" fetchpriority="high">
   <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0MGXB28GP"></script>
 <script>
@@ -99,12 +99,161 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 </script>
   <style>*{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a2a6c,#b21f1f,#fdbb2d);color:#fff;line-height:1.6}
-.game-header{background:rgba(0,0,0,.8);padding:15px 0;position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
+:root {
+  --bg-dark: #0b0f19;
+  --accent: #6c5ce7;
+  --text-white: #ffffff;
+  --text-gray: #a0aec0;
+}
+
+/* Top Navbar Styles */
+.top-navbar {
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.top-nav-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ffffff 30%, var(--text-gray) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-nav-logo span {
+  -webkit-text-fill-color: initial;
+}
+
+.top-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-nav-item {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.top-nav-item:hover, .top-nav-item.active {
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Dropdown Styles */
+.top-nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.top-nav-dropdown-btn {
+  background: none;
+  border: none;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-nav-dropdown-btn:hover, .top-nav-dropdown.active .top-nav-dropdown-btn {
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.top-nav-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #111519;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1010;
+  padding: 8px 0;
+  margin-top: 5px;
+}
+
+.top-nav-dropdown-content a {
+  color: var(--text-gray);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.top-nav-dropdown-content a:hover, .top-nav-dropdown-content a.active {
+  color: var(--text-white);
+  background: var(--accent);
+}
+
+.top-nav-dropdown:hover .top-nav-dropdown-content {
+  display: block;
+}
+
+/* Toggle button for Mobile */
+.top-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1020;
+}
+
+.top-nav-toggle .toggle-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
-.header-content{display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:10px;font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
-.back-btn{background:#6c5ce7;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;transition:.3s}
-.back-btn:hover{background:#a29bfe;transform:translateY(-2px)}
 .game-container{padding:10px 0}
 .game-frame{width:100%;max-width:800px;height:600px;margin:0 auto;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.5);background:#000;position:relative;min-height:400px}
 .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;background:#002B50;position:absolute;top:0;left:0;width:100%;z-index:2}
@@ -134,18 +283,113 @@ body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a2a6c
 .zoom-btn{position:absolute;right:12px;bottom:12px;z-index:9999;background:rgba(0,0,0,.6);color:#fff;border:none;width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;backdrop-filter:blur(4px)}
 .page-layout{max-width:800px;margin:0 auto;padding-top:10px}
 .main-content{width:100%}
-@media (max-width:768px){.game-frame{height:450px}.game-title{font-size:2.2rem}.features{grid-template-columns:1fr}}
-@media (max-width:480px){.game-frame{height:350px}.header-content{flex-direction:column;gap:15px}.game-title{font-size:1.8rem}}</style>
+
+@media (max-width: 768px) {
+  .top-nav-toggle {
+    display: flex;
+  }
+
+  .top-nav-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 70px);
+    background: #0b0f19;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 20px;
+    gap: 10px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .top-nav-menu.open {
+    right: 0;
+  }
+
+  .top-nav-item, .top-nav-dropdown-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 15px;
+  }
+
+  .top-nav-dropdown-content {
+    position: static;
+    display: block;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+
+  .top-nav-toggle.active .toggle-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .top-nav-toggle.active .toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .top-nav-toggle.active .toggle-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .game-frame{height:450px}
+  .game-title{font-size:2.2rem}
+  .features{grid-template-columns:1fr}
+}
+@media (max-width:480px){.game-frame{height:350px}.game-title{font-size:1.8rem}}</style>
 </head>
 <body>
-  <header class="game-header">
-    <div class="container">
-      <div class="header-content">
-        <a href="https://gamilify.github.io" class="logo">🎮 Fresh Arcade</a>
-        <a href="https://gamilify.github.io" class="back-btn">← All Games</a>
+
+    <nav class="top-navbar">
+    <div class="top-nav-container">
+      <a href="index.html" class="top-nav-logo">
+        <span>🎮</span> Fresh Arcade
+      </a>
+      <button class="top-nav-toggle" id="topNavToggle" aria-label="Toggle menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+      <div class="top-nav-menu" id="topNavMenu">
+        <a href="index.html" class="top-nav-item ">Home</a>
+        <a href="category-casual.html" class="top-nav-item ">Casual</a>
+        <a href="category-puzzle.html" class="top-nav-item active">Puzzle</a>
+        <a href="category-simulation.html" class="top-nav-item ">Simulation</a>
+        <a href="category-adventure.html" class="top-nav-item ">Adventure</a>
+        <a href="category-agility.html" class="top-nav-item ">Agility</a>
+        <a href="category-shooter.html" class="top-nav-item ">Shooter</a>
+        <div class="top-nav-dropdown ">
+          <button class="top-nav-dropdown-btn">More ▾</button>
+          <div class="top-nav-dropdown-content">
+            <a href="category-racing-driving.html" class="">Racing & Driving</a>
+            <a href="category-dress-up.html" class="">Dress-up</a>
+            <a href="category-strategy.html" class="">Strategy</a>
+            <a href="category-match-3.html" class="">Match-3</a>
+            <a href="category-battle.html" class="">Battle</a>
+            <a href="category-merge.html" class="">Merge</a>
+            <a href="category-io.html" class="">.IO</a>
+            <a href="category-mahjong-connect.html" class="">Mahjong & Connect</a>
+            <a href="category-cards.html" class="">Cards</a>
+            <a href="category-bubble-shooter.html" class="">Bubble Shooter</a>
+            <a href="category-educational.html" class="">Educational</a>
+            <a href="category-sports.html" class="">Sports</a>
+            <a href="category-cooking.html" class="">Cooking</a>
+            <a href="category-boardgames.html" class="">Boardgames</a>
+            <a href="category-football.html" class="">Football</a>
+            <a href="category-quiz.html" class="">Quiz</a>
+            <a href="category-basketball.html" class="">Basketball</a>
+            <a href="category-care.html" class="">Care</a>
+            <a href="category-jigsaw.html" class="">Jigsaw</a>
+            <a href="category-art.html" class="">Art</a>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
 
   <div class="container">
     <div class="page-layout">
@@ -173,7 +417,7 @@ body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a2a6c
     <h1 class="game-title">Bears vs. Art</h1>
     
     <div class="game-main-image">
-      <img src="https://gamilify.github.io/images/317.webp" 
+      <img src="https://gamilify.github.io/images/546.webp" 
            alt="Bears vs. Art gameplay screenshot" 
            loading="eager"
            decoding="sync"
@@ -293,6 +537,16 @@ document.addEventListener('DOMContentLoaded',function(){
     document.addEventListener('msfullscreenchange', checkFullscreenState);
     
     checkFullscreenState();
+  }
+
+  // Top Nav Menu mobile toggle
+  const topNavToggle = document.getElementById('topNavToggle');
+  const topNavMenu = document.getElementById('topNavMenu');
+  if (topNavToggle && topNavMenu) {
+    topNavToggle.addEventListener('click', () => {
+      topNavMenu.classList.toggle('open');
+      topNavToggle.classList.toggle('active');
+    });
   }
 });
 </script>
